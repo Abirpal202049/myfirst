@@ -1,149 +1,272 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
     background: url(https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
     height: 500px;
-    /* width: 17000px; */
     color: rgb(255, 255, 255);
     font-family: "Baloo Bhaina 2", cursive;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  
   }
-
-.left {
-    /* border: solid wheat 3px ; */
-    /* margin: 3px; */
-    /* padding: 3px; */
-    display: inline-block;
-    position: absolute;
-    left: 60px;
-    top: 22px;
-}
-
-.left img {
-    width: 100px;
-    filter: invert(80%);
-}
-
-.right {
-    /* border: solid rgb(27, 30, 212) 3px; */
-    /* margin: 3px; */
-    /* padding: 3px; */
-    position: absolute;
-    right: 60px;
-    top: 22px;
-    display: inline-block;
-}
-
-.mid {
-    /* border: solid rgb(165, 218, 19) 3px ; */
-    /* padding: 3px; */
-    display: block;
-    margin: 22px auto;
-    width: 45%;
-    top: 22px;
-    color: white;
-}
-
-.navbar {
-    display: inline-block;
-}
-
-.navbar li {
-    display: inline-block;
-    font-size: 16px;
-}
-
-.navbar li a {
+  
+  /* Starting of the navbar */
+  .header {
+    background: rgba(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: default;
+    background-size: cover;
+    display: flex;
+    /* margin-top: 10px; */
+    margin-bottom: 90px;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    }
+  /* logo  */
+  .left {
+    /* background-color: rgb(0, 0, 0); */
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  img {
+    width: 40%;
+    filter: invert(1);
+  }
+  /* Main options for navbar */
+  .mid {
+    /* background-color: rgb(0, 0, 0); */
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    margin: auto 40px;
+    text-align: center;
+  }
+  a {
+    font-size: 17px;
     text-decoration: none;
-    padding: 12px 8px;
-    color: rgb(255, 255, 255);
-}
-
-.navbar li a:hover {
-    text-decoration: underline;
-    color: rgb(150, 145, 145);
-}
-
-.navbar li a.active {
-    text-decoration: underline;
-    color: rgb(233, 236, 30);
-}
-
-.button {
-    border: 2px solid pink;
-    padding: 0px 24px;
-    margin: 0px 10px;
     color: white;
-    background-color: rgb(177, 11, 243);
-    border-radius: 30px;
-    font-family: 'Baloo Bhaina 2', cursive;
-}
-.button2 {
-    border: 2px solid pink;
-    padding: 7px 18px;
-    margin: 20px 15px;
-    color: white;
-    background-color:transparent;
-    border-radius: 8px;
-    font-family: 'Baloo Bhaina 2', cursive;
-}
-
-.button:hover {
-    border-color: rgb(255, 209, 5);
-    color: rgb(238, 255, 6);
-    background-color: rgb(117, 8, 241);
-}
-.button2:hover {
-    border-color: rgb(94, 92, 86);
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-
-.container {
-    font-family: 'Baloo Bhaina 2', cursive;
-    /* border: 2px solid white; */
-    border-radius: 10px;
-    width: 33%;
-    margin: 60px 137px;
-    padding: 26px 32px 22px 34px;
-    size: 20px;
-    color: cyan;
-
-
-}
-
-.form {
-    font-family: 'Baloo Bhaina 2', cursive;
-    text-align: center;
-
-}
-
-.form input {
-    font-family: 'Baloo Bhaina 2', cursive;
-    text-align: center;
-    width: 300px;
+  }
+  a:hover {
+    color: gray;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  /* Sign up and login */
+  .right {
+    /* background-color: rgba(0, 0, 0); */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .button {
+    margin: auto;
+    width: 35%;
     height: 40px;
-    border-radius: 25px;
-    /* padding-top: 1px; */
-    /* padding-bottom: 25px; */
-    margin: 3px 23px;
-    background-color: transparent;
-    border-color: white;
-
-}
-
-.quote {
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    /* border: 2px solid white; */
-    position: absolute;
-    right: 60px;
-    top: 300px;
-    display: inline-block;
-    width: 43%;
-    font-size: 35px;
-}
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .redh:hover {
+    background-color: rgb(255, 0, 0);
+    transition: 1s;
+    color: white;
+  }
+  .blueh:hover {
+    background-color: rgb(0, 0, 255);
+    transition: 1s;
+    color: white;
+  }
+  
+  /* Main body starts from here  */
+  .container {
+    display: flex;
+    margin: 0 10%;
+    margin-bottom: 100px;
+  }
+  /* form of the website  */
+  h2 {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: cursive;
+    color: cyan;
+    margin-top: 20px;
+  }
+  form {
+    border: 5px double #ffffff40;
+    border-radius: 20px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .form {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 15px 0px;
+  }
+  input[type="text"] {
+    border: groove 2px #ffffffcc;
+    width: 70%;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 32px;
+    font-size: unset;
+    font-family: cursive;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+  button.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 27%;
+    height: 33px;
+    font-size: 18px;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+  }
+  button.button2:hover {
+    background-color: rgb(0, 255, 0);
+    transition: 1.5s;
+    color: black;
+  }
+  .red {
+    background-color: rgb(255, 0, 0);
+    transition: 1s;
+  }
+  .blue {
+    background-color: rgb(0, 0, 255);
+    transition: 1s;
+  }
+  /* Quotation of the website  */
+  .quote {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    padding: 50px;
+    font-size: xx-large;
+  }
+  
+  .burger {
+    display: none;
+    border: solid;
+    border-radius: 5px;
+    margin: 8px auto;
+    cursor: pointer;
+  }
+  .line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+  }
+  /* At 1050px & 275px responsiveness goes from here we have to make the hamburger menu */
+  
+  
+  @media only screen and (max-width: 1194px) {
+    .header {
+      flex-direction: column;
+      margin: auto;
+      height: 436px;
+      transition: all 0.5s ease-out;
+    }
+    .left {
+      flex-direction: column;
+      margin: auto;
+      width: 40%;
+    }
+    .mid {
+      flex-direction: column;
+      margin: auto;
+    }
+    .navbar {
+      flex-direction: column;
+    }
+    .right {
+      flex-direction: column;
+      margin: auto;
+    }
+    .button {
+      width: 100%;
+      margin: 5px auto;
+      height: 28px;
+    }
+    .container {
+      flex-direction: column;
+      margin: 1%;
+    }
+    .form {
+      flex-direction: column;
+    }
+    form {
+      width: 100%;
+    }
+    .quote {
+      width: 100%;
+      flex-direction: column;
+      font-size: large;
+    }
+    input[type="text"] {
+      width: 90%;
+    }
+    button.button2 {
+      width: 50%;
+    }
+  
+    /* very important part  */
+    .burger {
+      display: block;
+      position: absolute;
+      top: 0%;
+      left: 2%;
+    }
+    .navheight {
+      height: 39px;
+      background: black;
+      transition: all 0.5s ease-out;
+    }
+    .visibility {
+      opacity: 0;
+    }
+  }
